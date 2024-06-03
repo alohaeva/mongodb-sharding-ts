@@ -32,6 +32,7 @@ services:
       - "27017:27017"
     volumes:
       - ./scripts:/scripts
+      - ./data:/data
     depends_on:
       - config
       - shard1
